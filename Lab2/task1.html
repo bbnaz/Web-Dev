@@ -1,1 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook</title>
+</head>
+<style>
+    body{
+        background: rgb(240, 242, 245);
+    }
+    /*h1{*/
+    /*    font-family: Tw Cen MT Condensed , "Times New Roman";*/
+    /*    color: rgb(24, 119, 242);*/
+    /*    position: absolute;*/
+    /*    top: 143px;*/
+    /*    left: 143px;*/
+    /*    font-weight: 700;*/
+    /*    font-size: 75px;*/
+    /*}*/
+    #facebook{
+        position: absolute;
+        top: 177px;
+        left: 115px;
+    }
+    #text{
+        font-family: Helvetica,Sans-Serif;
+        position: absolute;
+        top: 248px;
+        left: 143px;
+        font-weight: normal;
+        font-size: 28px;
+    }
+    #text2{
+        font-family: Helvetica,Sans-Serif;
+        position: absolute;
+        text-align: center;
+        top: 496px;
+        right: 150px;
+        color: black;
+        font-size: 14px;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    form{
+        background-color: #fff;
+        position: absolute;
+        width: 390px;
+        height: 315px;
+        left: -130px;
+        top: 200px;
+        /*width: 320px;*/
+        /*height: 270px;*/
+        padding: 10px 5px 20px 5px;
+        margin: -10vh 850px;
+        border-radius: 5px;
+        /*box-shadow: 5px 5px 6px -7px;*/
+        /*box-sizing: border-box;*/
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    }
+    input[type="text3"], input[type="password"]{
+        display: block;
+        background-color: #fff;
+        margin: auto;
+        border: 0.5px solid rgb(225, 225, 225);
+        position: center;
+        width: 300px;
+        height: 30px;
+        /*padding: 15px 83px;*/
+        padding: 10px 35px;
+        border-radius: 5px;
+        /*padding-left: 5px;*/
+        /*padding-right: 5px;*/
+        /*padding-top: 20px;*/
+        text-align: left;
+        color: black;
+        font-family: Helvetica,Sans-Serif;
+        font-size: 17px;
+    }
+    input[type="text3"]:focus, input[type="password"]:focus{
+        border: 0.5px solid #1877f2;
+    }
+    button{
+        border: none;
+        background: #1877f2;
+        color: white;
+        margin: auto;
+        width: 371px;
+        height: 50px;
+        display: block;
+        border-radius: 5px;
+        padding: 10px 0;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 20px
+    }
+    .forget_password{
+        display: block;
+        width: 200px;
+        margin: auto;
+        color: #1877f2;
+        padding-left: 80px;
+        font-family: Helvetica,Sans-Serif;
+        font-weight: 400;
+        font-size: 13px;
+        position: absolute;
+        left: 75px;
+    }
+    .forget_password:hover{
+        text-decoration: underline;
+    }
+    .line{
+        border-top: 1px solid #222;
+        opacity: 0.2;
+        margin: 5% 0;
+    }
+    .create_new_acc{
+        width: 240px;
+        font-size: 17px;
+        background: #42b72a;
+        text-align: center;
+        position: absolute;
+        left: 85px;
+        top: 275px;
+    }
+    footer{
+        margin: 0;
+        padding: 10px 100px 20px;;
+        display: flex;
+        justify-content: center;
+        background:white;
+        color:grey;
+        position: absolute;
+        top: 620px;
 
+    }
+
+    .footer1 a{
+        color:rgb(138, 141, 145);
+        font-size: 12px;
+        padding-inline-end: 8px;
+        font-family: Helvetica,Sans-Serif;
+    }
+    .footer2 a{
+        color:rgb(144, 143, 143);
+        font-size: 12px;
+        padding-inline-end: 16.5px;
+        font-family: Helvetica,Sans-Serif;
+    }
+
+    .line1{
+        border-top: 1px solid #222;
+        opacity: 0.2;
+        margin: 10px 0;
+
+    }
+    .lan{
+        display: inline-block;
+    }
+    .meta{
+        font-size: 12px;
+        font-family: Helvetica, Sans-Serif;
+        margin: 25px 0;
+    }
+
+</style>
+<body>
+<!--<h1>facebook</h1>-->
+<img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" width="300" id="facebook">
+<p id="text">Facebook помогает вам всегда <br> оставаться на связи и общаться со <br> своими знакомыми.</p>
+
+<form action="">
+    <input type="text3" placeholder="Электронный адрес или номер телефона" /><br />
+    <input type="password" placeholder="Пароль" /><br />
+    <button type="submit">Вход</button> <br>
+    <a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0" class="forget_password">Забыли пароль?</a> <br>
+    <div class="line"></div> <br>
+    <button class="create_new_acc">Создать новый аккаунт</button>
+</form>
+
+<p id="text2"><a href="https://www.facebook.com/pages/create/?ref_type=registration_form"><strong>Создать Страницу</strong></a> знаменитости, музыкальной группы или <br>компании.</p>
+<footer>
+    <ul>
+        <div class="footer1">
+            <li class="lan"><a href=''>Русский</a></li>
+            <li class="lan"><a href='https://www.facebook.com/'>English (US)</a></li>
+            <li class="lan"><a href='https://tr-tr.facebook.com/'>  Türkçe</a></li>
+            <li class="lan"><a href='https://id-id.facebook.com/'>  Bahasa Indonesia</a>
+            <li class="lan"><a href='https://zh-cn.facebook.com/'>  中文(简体)</a>
+            <li class="lan"><a href='https://kk-kz.facebook.com/'>  Қазақша</a>
+            <li class="lan"><a href='https://de-de.facebook.com/'>  Deutsch</a>
+            <li class="lan"><a href='https://ko-kr.facebook.com/'>  한국어</a>
+            <li class="lan"><a href='https://sq-al.facebook.com/'>  Shqip</a>
+            <li class="lan"><a href='https://es-la.facebook.com/'>  Español</a>
+            <li class="lan"><a href='https://pt-br.facebook.com/'>  Português (Brasil)</a>
+                <a href="#" class="button15">+</a>
+        </div>
+        <div class="line1"></div>
+        <div class="footer2">
+            <li class="lan"><a href='https://ru-ru.facebook.com/reg/'>Регистрация</a>
+            <li class="lan"><a href='https://ru-ru.facebook.com/login/'>Вход</a>
+            <li class="lan"><a href='https://messenger.com/'>Messenger</a>
+            <li class="lan"><a href='https://ru-ru.facebook.com/lite/'>Facebook Lite</a>
+            <li class="lan"><a href='https://ru-ru.facebook.com/watch/'>Watch</a>
+            <li class="lan"><a href='https://ru-ru.facebook.com/places/'>Места</a>
+            <li class="lan"><a href='https://ru-ru.facebook.com/games/'>Игры</a>
+            <li class="lan"><a href='https://ru-ru.facebook.com/marketplace/'>Marketplace</a>
+            <li class="lan"><a href='https://pay.facebook.com/'>Meta Pay</a>
+            <li class="lan"><a href='https://www.oculus.com/'>Oculus</a>
+            <li class="lan"><a href='https://portal.facebook.com/'>Portal</a>
+            <li class="lan"><a href='https://www.instagram.com/'>Instagram</a>
+            <li class="lan"><a href='https://www.bulletin.com/'> Bulletin</a> <br>
+            <li class="lan"><a href='https://ru-ru.facebook.com/fundraisers/'>Благотворительные акции</a>
+            <li class="lan"><a href='https://ru-ru.facebook.com/biz/directory/'>Услуги</a>
+            <li class="lan"><a href='https://ru-ru.facebook.com/votinginformationcenter/?entry_point=c2l0ZQ%3D%3D'>Центр информации о выборах</a>
+            <li class="lan"><a href='https://ru-ru.facebook.com/privacy/policy/?entry_point=facebook_page_footer'> Политика конфиденциальности</a>
+            <li class="lan"><a href='https://ru-ru.facebook.com/privacy/center/?entry_point=facebook_page_footer'>Центр конфиденциальности</a>
+            <li class="lan"><a href='https://ru-ru.facebook.com/groups/explore/'>Группы</a>
+            <li class="lan"><a href='https://about.meta.com/'>Информация</a> <br>
+            <li class="lan"><a href='https://ru-ru.facebook.com/ad_campaign/landing.php?placement=pflo&campaign_id=402047449186&nav_source=unknown&extra_1=auto'>Создать рекламу</a>
+            <li class="lan"><a href='https://ru-ru.facebook.com/pages/create/?ref_type=site_footer'>Создать Страницу</a>
+            <li class="lan"><a href='https://developers.facebook.com/?ref=pf'>Разработчикам</a>
+            <li class="lan"><a href='https://ru-ru.facebook.com/careers/?ref=pf'>Вакансии</a>
+            <li class="lan"><a href='https://ru-ru.facebook.com/policies/cookies/'> Файлы cookie</a>
+            <li class="lan"><a href='https://www.facebook.com/help/568137493302217'>Рекламные предпочтения</a>
+            <li class="lan"><a href='https://ru-ru.facebook.com/policies?ref=pf'>Условия использования</a>
+            <li class="lan"><a href='https://ru-ru.facebook.com/help/?ref=pf'>Справка</a><br>
+            <li class="lan"><a href='https://ru-ru.facebook.com/help/637205020878504'>Загрузка контактов и лица, не являющиеся пользователями</a> <br>
+        </div>
+        <p class="meta"> Meta © 2023
+        </p>
+    </ul>
+</footer>
+</body>
+</html>
