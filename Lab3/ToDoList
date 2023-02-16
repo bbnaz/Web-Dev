@@ -62,25 +62,36 @@
         left: 990px;
         padding: 8px 16px;
     }
-
     .todo {
-        padding-left: 0; }
+        padding-left: 0;
+        margin: 120px 100px 100px 100px;
+    }
     .todo li {
         padding: 1em;
-        list-style-type: none; }
-    .todo li:not(:last-child) {
-        border-bottom: 1px solid #000; }
+        list-style-type: none;
+        border: 0.5px solid rgb(190, 190, 190);
+        position: relative;
+        top: 15px;
+        left: 145px;
+        width: 800px;
+        height: 25px;
+        border-radius: 2px;
+        font-family: Arial;
+    }
 
+    .todo li:not(:last-child) {
+        border: 0.5px solid rgb(190, 190, 190);
+    }
     input[type=checkbox] {
         opacity: 0;
-        position: absolute; }
-
+        position: absolute;
+    }
     input[type=checkbox], label {
         display: inline-block;
         vertical-align: middle;
         margin: 5px;
-        cursor: pointer; }
-
+        cursor: pointer;
+    }
     input[type=checkbox] + label:before {
         content: '';
         background: white;
@@ -92,8 +103,8 @@
         height: 10px;
         padding: 2px;
         margin-right: 10px;
-        text-align: center; }
-
+        text-align: center;
+    }
     input[type=checkbox]:checked + label:before {
         content: "";
         display: inline-block;
@@ -105,9 +116,8 @@
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         border-radius: 0;
-        margin: 0 15px 5px 5px; }
-
-
+        margin: 0 15px 5px 5px;
+    }
 </style>
 <body>
 <p id="ToDoList">ToDo List</p>
@@ -115,11 +125,7 @@
 <input type = "text" class="new_task" placeholder="New Task" />
 <button class="add">Add</button> <br>
 
-<ul class = "todo">
-    <li>First Item</li>
-    <li class="checked">Second Item</li>
-    <li>Third Item</li>
-</ul>
+<ul class = "todo"></ul>
 </body>
 
 <script>
@@ -155,10 +161,9 @@
             </li>
             `;
 
-            todo.innerHTML = displayMessages;
+            todo.innerHTML = displayMessage;
         })
     };
 
 </script>
-
 </html>
