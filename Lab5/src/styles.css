@@ -49,6 +49,7 @@ p {
 a {
   cursor: pointer;
   color: rgb(255,105,180);
+  font-size: 35px;
   text-decoration: none;
 }
 
@@ -105,7 +106,7 @@ label {
 }
 
 .fancy-button i.material-icons {
-  color: #1976d2;
+  color: rgb(255,105,180);
   padding-right: 4px;
 }
 
