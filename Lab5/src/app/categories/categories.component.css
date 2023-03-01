@@ -1,0 +1,25 @@
+.menu{
+  text-align: center;
+  display: inline-block;
+  margin-left: 37px;
+  border-radius: 10px;
+  background-color: rgb(230, 207, 230);
+
+}
+.field{
+  border-width: 0px;
+}
+h3{
+  color: palevioletred;
+  font-family: 'Bold Script';
+  font-size: 22px;
+}
+
+h1{
+  color: rgb(255,105,180);
+  font-family: 'Bold Script';
+}
+
+body{
+  background-color: #e5e5e5;
+}
