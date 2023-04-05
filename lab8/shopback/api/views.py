@@ -35,4 +35,3 @@ def category_products(request, id):
     products = Category.objects.filter(category=category)
     products_json = [Product.to_json() for product in products]
     return JsonResponse(products_json, safe=False)
-# Create your views here.
